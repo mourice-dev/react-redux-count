@@ -5,8 +5,8 @@ import { createRoot } from "react-dom/client";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import "./index.css";
-import App from "./App.tsx";
-import { countingReducer } from "./Counting.tsx";
+import App from "./App";
+import countingReducer from "./Counting";
 
 const store = configureStore({
   reducer: {
@@ -19,5 +19,5 @@ createRoot(document.getElementById("root")!).render(
     <Provider store={store}>
       <App />
     </Provider>
-  </StrictMode>,
+  </StrictMode>
 );

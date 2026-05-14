@@ -5,7 +5,7 @@ import { increment } from './Counting';
 
 
 export default function App() {
-  const count = useSelector((state) => state.count);
+  const count = useSelector((state) => state.counting.count);
   const dispatch = useDispatch();
 
   return (
